@@ -1,0 +1,13 @@
+a = [2, 5, -5, 14, 8, 9, -11]
+b = 2
+
+max_sum = sum(a[:b])
+curr_sum = max_sum
+
+for i in range(b, len(a)):
+    curr_sum = curr_sum - a[i-b] + a[i]
+
+    if curr_sum > max_sum:
+        max_sum = curr_sum
+
+print(max_sum)
