@@ -1,0 +1,11 @@
+a = 3
+b = 4
+c = 2
+
+largest = max(a, b, c)
+
+while True:
+    if largest % a == 0 and largest % b == 0 and largest % c == 0:
+        print(largest)
+        break
+    largest += 1
